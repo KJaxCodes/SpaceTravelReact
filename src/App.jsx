@@ -8,7 +8,8 @@ import PlanetsPage from "./pages/Planets";
 
 // layouts
 import RootLayout from './layouts/RootLayout'
-import SpacecraftsPage from "./pages/Spacecrafts";
+import SpacecraftsPage from "./pages/Spacecrafts/Spacecrafts";
+import Spacecraft from "./pages/Spacecrafts/Spacecraft";
 
 
 const router = createBrowserRouter(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route path="planets" element={<PlanetsPage />} />
         <Route path="spacecrafts" element={<SpacecraftsPage />} />
+        <Route path="spacecrafts/:id" element={<Spacecraft />} />
       </Route>
 
       <Route path="*" element={<NotFound />} />
