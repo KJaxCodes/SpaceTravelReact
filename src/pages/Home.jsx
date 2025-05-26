@@ -2,7 +2,7 @@
 export default function Home() {
     return (
         <div className="home">
-            <h2>🌌 Welcome to Space Travel</h2>
+            <h2> Welcome, Commanders!</h2>
 
             <p className="home">
                 In the not-so-distant future, Earth has fallen into ruin after centuries of environmental decline and neglect. But hope is not lost! Humanity has transformed other planets in our solar system into thriving, habitable worlds.

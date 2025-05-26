@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap');
 
 :root {
-    --primary: rgb(255, 200, 0);
+    --primary: rgb(61, 211, 237);
     --secondary: rgba(0, 0, 0, 0.911);
 }
 
@@ -30,24 +30,52 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    margin-bottom: 0.75rem;
+    margin: 2rem;
 }
 
 p {
-    margin: 20px 0;
+    margin: 20px;
 }
 
 ul {
     list-style-type: disc;
     padding-left: 2rem;
     /* creates space for bullets */
-    margin: 1rem 0;
+    margin: 1rem;
 }
 
 li {
-    margin-bottom: 0.5rem;
+    margin: 0.5rem;
 }
 
-/* .home {
-    border: 1px solid white;
-} */
+/* navbar */
+
+header {
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid var(--primary);
+  display: inline-block;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+header nav a {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+  color: var(--primary);
+}
+
+header nav a.active {
+  background: var(--primary);
+  color: black;
+}
