@@ -13,13 +13,16 @@ import SpacecraftsPage from "./pages/Spacecrafts";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
-      <Route index element={<Home />} />
-      <Route path="planets" element={<PlanetsPage />} />
-      <Route path="spacecrafts" element={<SpacecraftsPage />} />
+    <>
+      <Route path="/" element={<RootLayout />}>
+        <Route index element={<Home />} />
+        <Route path="planets" element={<PlanetsPage />} />
+        <Route path="spacecrafts" element={<SpacecraftsPage />} />
+      </Route>
 
       <Route path="*" element={<NotFound />} />
-    </Route>
+      {/* This catches ALL unmatched routes */}
+    </>
   )
 )
 
