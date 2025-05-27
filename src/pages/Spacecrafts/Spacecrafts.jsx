@@ -1,6 +1,6 @@
-//Show all spacecraft with ability to click for more info
+//Show all spacecraft with ability to click for more info 
 //Option to construct a new spacecraft
-//Option to delete/decommission existing spacecraft
+//Option to delete/decommission existing spacecraft - should I have my delete button here?
 
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
