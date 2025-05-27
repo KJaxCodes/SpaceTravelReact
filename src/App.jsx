@@ -5,11 +5,12 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import PlanetsPage from "./pages/Planets";
+import SpacecraftsPage from "./pages/Spacecrafts/Spacecrafts";
+import Spacecraft from "./pages/Spacecrafts/Spacecraft";
+import Construction from "./pages/Construction";
 
 // layouts
 import RootLayout from './layouts/RootLayout'
-import SpacecraftsPage from "./pages/Spacecrafts/Spacecrafts";
-import Spacecraft from "./pages/Spacecrafts/Spacecraft";
 
 
 const router = createBrowserRouter(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
         <Route path="planets" element={<PlanetsPage />} />
         <Route path="spacecrafts" element={<SpacecraftsPage />} />
         <Route path="spacecrafts/:id" element={<Spacecraft />} />
+        <Route path="spacecrafts/build" element={<Construction />} />
       </Route>
 
       <Route path="*" element={<NotFound />} />

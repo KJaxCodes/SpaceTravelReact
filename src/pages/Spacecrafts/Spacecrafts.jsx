@@ -32,9 +32,13 @@ function SpacecraftsPage() {
     return (
         <div>
             <h2>🚀 All Spacecrafts</h2>
+            <p>
+                <Link to="/spacecrafts/build">🛠️ Build New Spacecraft</Link>
+            </p>
             {isLoading && <p>Loading spacecrafts...⌛</p>}
             {error && <p style={{ color: "red" }}>Error: {error}</p>}
             {!isLoading && !error && (
+
                 <ul>
                     {spacecrafts.map((craft) => (
                         <li key={craft.id}>
