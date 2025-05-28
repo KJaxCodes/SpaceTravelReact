@@ -9,7 +9,7 @@ export default function Home() {
             </p>
 
             <p className="home">
-                As a Commander, your mission is critical: <strong>evacuate the remaining population from Earth</strong> and lead them to safety using advanced spacecraft.
+                As a Commander, your mission is critical: evacuate the remaining population from Earth and lead them to safety using advanced spacecraft.
             </p>
 
             <h3>🚀 What You Can Do:</h3>

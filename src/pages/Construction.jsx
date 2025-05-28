@@ -84,9 +84,9 @@ function Construction() {
                 <div className="Input">
                     <label>Picture URL: </label>
                     <input
-                        {...register("picture")}
+                        {...register("pictureUrl")}
                         type="url"
-                        id="picture"
+                        id="pictureUrl"
                     />
                 </div>
                 <div className="Input">
