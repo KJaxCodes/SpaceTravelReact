@@ -89,9 +89,6 @@ function Construction() {
                         id="pictureUrl"
                     />
                 </div>
-                <div className="Input">
-                    <label>Assign to Planet: </label>
-                </div>
 
                 <button type="submit">Build Spacecraft</button>
             </form>
