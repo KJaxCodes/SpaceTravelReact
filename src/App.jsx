@@ -2,10 +2,10 @@ import styles from "./App.module.css";
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 
 //pages
-import Home from "./pages/Home";
+import HomePage from "./pages/HomePage";
 import NotFound from "./pages/NotFound";
-import PlanetsPage from "./pages/Planets";
-import SpacecraftsPage from "./pages/Spacecrafts/Spacecrafts";
+import PlanetsPage from "./pages/PlanetsPage";
+import SpacecraftsPage from "./pages/Spacecrafts/SpacecraftsPage";
 import Spacecraft from "./pages/Spacecrafts/Spacecraft";
 import Construction from "./pages/Construction";
 
@@ -17,7 +17,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<RootLayout />}>
-        <Route index element={<Home />} />
+        <Route index element={<HomePage />} />
         <Route path="planets" element={<PlanetsPage />} />
         <Route path="spacecrafts" element={<SpacecraftsPage />} />
         <Route path="spacecrafts/:id" element={<Spacecraft />} />
