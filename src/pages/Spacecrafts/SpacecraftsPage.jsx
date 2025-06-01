@@ -4,10 +4,16 @@
 
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useSpaceTravel } from "../../context/SpaceTravelContext";
 import SpaceTravelApi from "../../services/SpaceTravelApi"; // to get data from mock API
 
 function SpacecraftsPage() {
-    const [spacecrafts, setSpacecrafts] = useState([]);
+    const {
+        spacecrafts,
+        setSpacecrafts,
+        decommissionSpacecraftById
+    } = useSpaceTravel();
+
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
@@ -27,7 +33,7 @@ function SpacecraftsPage() {
         }
 
         loadSpacecrafts();
-    }, []);
+    }, [setSpacecrafts]);
 
     return (
         <div>
@@ -46,6 +52,12 @@ function SpacecraftsPage() {
                                 🔍
                             </Link> {" "}
                             {craft.name}  Capacity: {craft.capacity} Currently on Planet ID: {craft.currentLocation}
+                            <button
+                                onClick={() => decommissionSpacecraftById(craft.id)}
+                                style={{ marginLeft: "1rem" }}
+                            >
+                                Decommission Spacecraft
+                            </button>
                         </li>
                     ))}
                 </ul>
