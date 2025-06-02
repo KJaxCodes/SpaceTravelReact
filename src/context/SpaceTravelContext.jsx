@@ -26,7 +26,7 @@ export const SpaceTravelProvider = ({ children }) => {
         } catch (err) {
             console.error("Decommission failure", err.message);
         }
-    };
+    }; 5454
 
     return (
         <SpaceTravelContext.Provider
@@ -38,6 +38,8 @@ export const SpaceTravelProvider = ({ children }) => {
                 addSpacecraft,
                 decommissionSpacecraftById,
                 spacecraftId,
+                currentCraft,
+                setCurrentCraft,
             }}
         >
             {children}
